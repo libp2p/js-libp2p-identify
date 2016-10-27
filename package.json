@@ -2,17 +2,16 @@
   "name": "libp2p-identify",
   "version": "0.2.0",
   "description": "libp2p Identify Protocol",
-  "main": "lib/index.js",
-  "jsnext:main": "src/index.js",
+  "main": "src/index.js",
   "scripts": {
     "lint": "aegir-lint",
     "build": "aegir-build",
-    "test": "PHANTOM=off aegir-test",
+    "test": "aegir-test",
     "test:node": "aegir-test --env node",
-    "test:browser": "PHANTOM=off aegir-test --env browser",
-    "release": "PHANTOM=off aegir-release",
-    "release-minor": "PHANTOM=off aegir-release --type minor",
-    "release-major": "PHANTOM=off aegir-release --type major",
+    "test:browser": "aegir-test --env browser",
+    "release": "aegir-release",
+    "release-minor": "aegir-release --type minor",
+    "release-major": "aegir-release --type major",
     "coverage": "aegir-coverage",
     "coverage-publish": "aegir-coverage publish"
   },
@@ -21,7 +20,7 @@
     "test"
   ],
   "engines": {
-    "node": "^4.3.0"
+    "node": ">=4.0.0"
   },
   "repository": {
     "type": "git",
