@@ -9,9 +9,10 @@
     "test": "aegir-test",
     "test:node": "aegir-test --env node",
     "test:browser": "aegir-test --env browser",
-    "release": "aegir-release",
-    "release-minor": "aegir-release --type minor",
-    "release-major": "aegir-release --type major",
+    "docs": "aegir-docs",
+    "release": "aegir-release --docs",
+    "release-minor": "aegir-release --type minor --docs",
+    "release-major": "aegir-release --type major --docs",
     "coverage": "aegir-coverage",
     "coverage-publish": "aegir-coverage publish"
   },
@@ -37,16 +38,16 @@
   },
   "homepage": "https://github.com/libp2p/js-libp2p-identify#readme",
   "devDependencies": {
-    "aegir": "^9.1.1",
+    "aegir": "^9.2.0",
     "chai": "^3.5.0",
     "pre-commit": "^1.1.3",
     "pull-pair": "^1.1.0"
   },
   "dependencies": {
-    "multiaddr": "^2.0.3",
+    "multiaddr": "^2.1.1",
     "peer-id": "^0.8.0",
-    "peer-info": "^0.8.0",
-    "protocol-buffers": "^3.1.8",
+    "peer-info": "^0.8.1",
+    "protocol-buffers": "^3.2.1",
     "pull-length-prefixed": "^1.2.0",
     "pull-stream": "^3.5.0"
   },
