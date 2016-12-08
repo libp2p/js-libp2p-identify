@@ -1,4 +1,5 @@
 'use strict'
+
 const PeerInfo = require('peer-info')
 const PeerId = require('peer-id')
 const multiaddr = require('multiaddr')
@@ -6,7 +7,14 @@ const pull = require('pull-stream')
 const lp = require('pull-length-prefixed')
 
 const msg = require('./message')
-
+/**
+ * @alias dialer
+ * @memberof libp2p-identify
+ * @param {Connection} conn
+ * @param {function(Error?, PeerInfo, Array<Multiaddr>)} callback
+ * @returns {undefined}
+ *
+ */
 module.exports = (conn, callback) => {
   pull(
     conn,

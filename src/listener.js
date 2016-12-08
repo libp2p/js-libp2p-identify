@@ -5,10 +5,20 @@ const lp = require('pull-length-prefixed')
 
 const msg = require('./message')
 
+/**
+ * @alias listener
+ * @memberof libp2p-identify
+ * @param {Connection} conn
+ * @param {PeerInfo} pInfoSelf
+ * @returns {undefined}
+ *
+ */
 module.exports = (conn, pInfoSelf) => {
   // send what I see from the other + my Info
   conn.getObservedAddrs((err, observedAddrs) => {
-    if (err) { return }
+    if (err) {
+      return
+    }
     observedAddrs = observedAddrs[0]
 
     let publicKey = new Buffer(0)
