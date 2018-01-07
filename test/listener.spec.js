@@ -17,7 +17,9 @@ const identify = require('../src')
 describe('identify.listener', () => {
   let info
 
-  beforeEach((done) => {
+  beforeEach(function (done) {
+    this.timeout(10 * 1000)
+
     PeerInfo.create((err, _info) => {
       if (err) {
         return done(err)
