@@ -2,6 +2,7 @@
   "name": "libp2p-identify",
   "version": "0.7.1",
   "description": "libp2p Identify Protocol",
+  "leadMaintainer": "Jacob Heun <jacobheun@gmail.com>",
   "main": "src/index.js",
   "scripts": {
     "lint": "aegir lint",
@@ -30,7 +31,6 @@
     "IPFS",
     "libp2p"
   ],
-  "author": "David Dias <daviddias@ipfs.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/libp2p/js-libp2p-identify/issues"
