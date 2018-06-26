@@ -15,7 +15,7 @@
     "release-major": "aegir release --type major",
     "coverage": "aegir coverage"
   },
-  "pre-commit": [
+  "pre-push": [
     "lint",
     "test"
   ],
@@ -40,7 +40,6 @@
     "aegir": "^13.1.0",
     "chai": "^4.1.2",
     "dirty-chai": "^2.0.1",
-    "pre-commit": "^1.2.2",
     "pull-pair": "^1.1.0"
   },
   "dependencies": {
