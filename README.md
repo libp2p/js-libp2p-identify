@@ -1,3 +1,6 @@
+⛔️ DEPRECATED: libp2p-identify is now included in js-libp2p
+=====
+
 # js-libp2p-identify
 
 [![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://protocol.ai)
