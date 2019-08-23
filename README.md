@@ -1,4 +1,4 @@
-⛔️ DEPRECATED: libp2p-identify is now included in js-libp2p
+⛔️ DEPRECATED: libp2p-identify is now included in [js-libp2p](https://github.com/libp2p/js-libp2p)
 =====
 
 # js-libp2p-identify
